@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFE4E1"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textBus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择校车路线：" />
+    <!-- 选择公交路线 -->
+
+    <RadioGroup
+        android:id="@+id/chooseBus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textSize="20dp" >
+
+        <RadioButton
+            android:id="@+id/firstBus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="1路" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/secondBus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2路" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/thirdBus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3路" >
+        </RadioButton>
+    </RadioGroup>
+
+    <!-- 选择编号 -->
+
+    <TextView
+        android:id="@+id/textBianhao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="请校车编号：" />
+
+    <RadioGroup
+        android:id="@+id/chooseBianhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textSize="20dp" >
+
+        <RadioButton
+            android:id="@+id/bianhao1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="编号1" />
+
+        <RadioButton
+            android:id="@+id/bianhao2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编号2" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/bianhao3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编号3" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/bianhao4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编号4" >
+        </RadioButton>
+    </RadioGroup>
+    <!-- 选择方向 -->
+
+    <TextView
+        android:id="@+id/textDirection"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择运行方向：" />
+
+    <RadioGroup
+        android:id="@+id/chooseDirection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textSize="20dp" >
+
+        <RadioButton
+            android:id="@+id/forthDirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="返回方向" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/backDirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出发方向" >
+        </RadioButton>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:hint="GPS数据.." />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFE4E1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPostQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post请求测试"
+            android:textColor="#AA0000" />
+
+        <Button
+            android:id="@+id/btnGetQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get请求测试"
+            android:textColor="#00AA00" />
+
+        <Button
+            android:id="@+id/startSample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始"
+            android:textColor="#00AA00" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/baiduResponse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:hint="Http返回数据.." />
+
+</LinearLayout>
